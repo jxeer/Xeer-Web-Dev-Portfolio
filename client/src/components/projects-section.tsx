@@ -13,11 +13,11 @@ export default function ProjectsSection() {
       {/* Decorative geometric elements */}
       <div 
         className="absolute top-1/4 right-1/4 w-32 h-32 border opacity-30 rotate-45"
-        style={{ borderColor: 'hsl(84, 81%, 44%)' }}
+        style={{ borderColor: 'var(--accent-purple)' }}
       />
       <div 
         className="absolute bottom-1/3 left-1/4 w-16 h-16 opacity-20 rounded-full animate-float"
-        style={{ backgroundColor: 'hsl(84, 81%, 44%)' }}
+        style={{ backgroundColor: 'var(--accent-purple)' }}
       />
       
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-8" style={{ color: 'hsl(84, 81%, 44%)' }}>
+          <h2 className="text-5xl md:text-6xl font-bold mb-8" style={{ color: 'var(--accent-purple)' }}>
             Over the years,
           </h2>
           <div className="space-y-6 text-white">
@@ -88,7 +88,7 @@ export default function ProjectsSection() {
                       ? 'text-white bg-white bg-opacity-10' 
                       : 'text-white bg-opacity-20'
                   }`}
-                  style={company.accent ? {} : { backgroundColor: 'hsla(84, 81%, 44%, 0.2)' }}
+                  style={company.accent ? {} : { backgroundColor: 'hsla(162, 100%, 50%, 0.2)' }}
                 >
                   {company.name}
                 </motion.div>
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
           {/* Floating geometric elements */}
           <div 
             className="absolute top-0 right-0 w-8 h-8 opacity-60 animate-pulse-slow"
-            style={{ backgroundColor: 'hsl(84, 81%, 44%)' }}
+            style={{ backgroundColor: 'var(--accent-purple)' }}
           />
           <div className="absolute bottom-0 left-0 w-6 h-6 border border-white opacity-40" />
           <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-white opacity-30 rounded-full animate-float" />

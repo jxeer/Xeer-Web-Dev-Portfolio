@@ -18,7 +18,7 @@ export default function Navigation() {
     <>
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 p-8 flex justify-between items-center">
-        <div className="text-2xl font-bold" style={{ color: 'hsl(84, 81%, 44%)' }}>
+        <div className="text-2xl font-bold" style={{ color: 'var(--accent-purple)' }}>
           julian
         </div>
         <button
@@ -71,8 +71,8 @@ export default function Navigation() {
                   transition={{ delay: index * 0.1 + 0.2 }}
                   onClick={() => handleNavClick(item.id)}
                   className="block text-white text-2xl font-medium hover:text-accent transition-colors duration-300"
-                  style={{ '--accent': 'hsl(84, 81%, 44%)' } as any}
-                  onMouseEnter={(e) => e.currentTarget.style.color = 'hsl(84, 81%, 44%)'}
+                  style={{ '--accent': 'var(--accent-purple)' } as any}
+                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-purple)'}
                   onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
                 >
                   {item.label}

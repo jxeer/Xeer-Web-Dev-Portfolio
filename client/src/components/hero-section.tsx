@@ -51,7 +51,7 @@ export default function HeroSection() {
           >
             <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight mb-6">
               Full Stack<br />
-              <span style={{ color: 'hsl(84, 81%, 44%)' }}>Developer.</span>
+              <span style={{ color: 'var(--accent-purple)' }}>Developer.</span>
             </h1>
             <p className="text-white text-lg mb-12 opacity-90">
               I like to craft scalable web applications with 

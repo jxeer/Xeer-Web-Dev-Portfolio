@@ -27,7 +27,7 @@
   /* Custom portfolio colors */
   --dark-grey: hsl(220, 10%, 25%);
   --light-purple: hsl(280, 60%, 85%);
-  --accent-lime: hsl(84, 81%, 44%);
+  --accent-purple: #A259FF;
   --dark-section: hsl(220, 10%, 25%);
   --light-section: hsl(280, 60%, 95%);
 }

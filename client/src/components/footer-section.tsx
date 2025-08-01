@@ -18,27 +18,27 @@ export default function FooterSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-sm font-semibold mb-6 tracking-wider" style={{ color: 'hsl(84, 81%, 44%)' }}>
+            <h3 className="text-sm font-semibold mb-6 tracking-wider" style={{ color: 'var(--accent-purple)' }}>
               SAY HELLO
             </h3>
             <div className="space-y-4">
               <motion.a
                 href="mailto:hello@julianxeer.dev"
                 className="block text-lg transition-colors duration-300"
-                style={{ color: 'hsl(84, 81%, 44%)' }}
+                style={{ color: 'var(--accent-purple)' }}
                 whileHover={{ x: 5 }}
                 onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-                onMouseLeave={(e) => e.currentTarget.style.color = 'hsl(84, 81%, 44%)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--accent-purple)'}
               >
                 hello@julianxeer.dev
               </motion.a>
               <motion.a
                 href="https://t.me/julianxeer"
                 className="block text-lg transition-colors duration-300"
-                style={{ color: 'hsl(84, 81%, 44%)' }}
+                style={{ color: 'var(--accent-purple)' }}
                 whileHover={{ x: 5 }}
                 onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-                onMouseLeave={(e) => e.currentTarget.style.color = 'hsl(84, 81%, 44%)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--accent-purple)'}
               >
                 t.me/julianxeer
               </motion.a>
@@ -61,14 +61,14 @@ export default function FooterSection() {
                   key={link.label}
                   href={link.href}
                   className="block text-lg transition-colors duration-300"
-                  style={{ color: 'hsl(84, 81%, 44%)' }}
+                  style={{ color: 'var(--accent-purple)' }}
                   whileHover={{ x: 5 }}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.4 }}
                   viewport={{ once: true }}
                   onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = 'hsl(84, 81%, 44%)'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = 'var(--accent-purple)'}
                 >
                   {link.label}
                 </motion.a>
@@ -85,14 +85,14 @@ export default function FooterSection() {
                 key={social.label}
                 href={social.href}
                 className="transition-colors duration-300"
-                style={{ color: 'hsl(84, 81%, 44%)' }}
+                style={{ color: 'var(--accent-purple)' }}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.6 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.1 }}
                 onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-                onMouseLeave={(e) => e.currentTarget.style.color = 'hsl(84, 81%, 44%)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--accent-purple)'}
               >
                 {social.label}
               </motion.a>

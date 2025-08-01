@@ -48,7 +48,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
           className="bg-white p-12 rounded-lg shadow-lg border-l-4"
-          style={{ borderLeftColor: 'hsl(84, 81%, 44%)' }}
+          style={{ borderLeftColor: 'var(--accent-purple)' }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: 'var(--dark-grey)' }}>
             I write,<br />

@@ -5,6 +5,7 @@ This is a full-stack web application built with React (frontend) and Express.js 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Color scheme: Dark grey backgrounds with light purple backgrounds, using #A259FF for accent colors (replacing original green accents).
 
 # System Architecture
 
