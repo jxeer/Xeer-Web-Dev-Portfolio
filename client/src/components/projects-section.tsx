@@ -15,10 +15,10 @@ export default function ProjectsSection() {
       style={{
         backgroundColor: '#1E1E1E',
         backgroundImage: `
-          radial-gradient(circle, rgba(128, 128, 128, 0.15) 1px, transparent 1px),
+          radial-gradient(circle, rgba(200, 200, 200, 0.25) 1px, transparent 1px),
           linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)
         `,
-        backgroundSize: '25px 25px, 100% 100%',
+        backgroundSize: '30px 30px, 100% 100%',
         minHeight: '100vh',
         width: '100%'
       }}
