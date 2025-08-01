@@ -3,7 +3,13 @@ import profileImage from "@assets/selfie-icon_1754085792865.jpg";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="hero-gradient-bg section-full relative overflow-hidden dot-pattern-subtle">
+    <section 
+      id="home" 
+      className="section-full relative overflow-hidden dot-pattern-subtle"
+      style={{
+        background: 'linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)'
+      }}
+    >
       {/* Decorative Elements */}
       <div className="absolute top-1/4 right-1/4 w-32 h-32 opacity-20">
         <div className="dot-pattern w-full h-full" />
