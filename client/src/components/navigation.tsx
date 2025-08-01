@@ -55,7 +55,7 @@ export default function Navigation() {
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
             className="fixed top-0 right-0 w-full h-full z-30 flex items-center justify-center"
-            style={{ backgroundColor: 'hsl(251, 91%, 20%)' }}
+            style={{ backgroundColor: 'var(--dark-grey)' }}
           >
             <nav className="text-center space-y-8">
               {[

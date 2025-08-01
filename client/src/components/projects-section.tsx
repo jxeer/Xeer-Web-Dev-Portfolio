@@ -9,7 +9,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="section-full relative" style={{ backgroundColor: 'hsl(251, 91%, 20%)' }}>
+    <section id="projects" className="section-full relative" style={{ backgroundColor: 'var(--dark-section)' }}>
       {/* Decorative geometric elements */}
       <div 
         className="absolute top-1/4 right-1/4 w-32 h-32 border opacity-30 rotate-45"

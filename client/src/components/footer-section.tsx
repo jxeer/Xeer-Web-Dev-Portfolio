@@ -9,7 +9,7 @@ export default function FooterSection() {
   ];
 
   return (
-    <section className="py-16" style={{ backgroundColor: 'hsl(251, 91%, 20%)' }}>
+    <section className="py-16" style={{ backgroundColor: 'var(--dark-section)' }}>
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-16">
           <motion.div
