@@ -25,22 +25,66 @@ export default function HeroSection() {
       <div className="absolute top-1/2 right-16 w-8 h-8 bg-white opacity-20 animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-12 w-4 h-4 border border-white opacity-30" />
       
-      {/* Zig-zag decorative elements */}
-      <div className="absolute top-20 left-16 opacity-30">
-        <svg width="60" height="40" viewBox="0 0 60 40" fill="none">
-          <path 
-            d="M5 5 L15 5 L15 15 L25 15 L25 25 L35 25 L35 35 L45 35" 
-            stroke="rgba(200, 200, 200, 0.6)" 
-            strokeWidth="2" 
-            fill="none"
-          />
-        </svg>
-      </div>
-      
-      <div className="absolute bottom-32 right-20 opacity-25">
+      {/* Zig-zag decorative elements with pulsing animation */}
+      <div className="absolute top-20 left-16 animate-pulse-slow opacity-60">
         <svg width="80" height="50" viewBox="0 0 80 50" fill="none">
           <path 
-            d="M10 10 L20 10 L20 20 L30 20 L30 30 L40 30 L40 40 L50 40 L50 50 L60 50" 
+            d="M5 5 L20 5 L20 20 L35 20 L35 35 L50 35 L50 50 L65 50" 
+            stroke="rgba(200, 200, 200, 0.8)" 
+            strokeWidth="3" 
+            fill="none"
+          />
+        </svg>
+      </div>
+      
+      <div className="absolute bottom-32 right-20 animate-pulse-slow opacity-50">
+        <svg width="100" height="60" viewBox="0 0 100 60" fill="none">
+          <path 
+            d="M10 10 L25 10 L25 25 L40 25 L40 40 L55 40 L55 55 L70 55" 
+            stroke="#A259FF" 
+            strokeWidth="3" 
+            fill="none"
+          />
+        </svg>
+      </div>
+      
+      <div className="absolute top-1/3 left-1/2 animate-pulse-slow opacity-40">
+        <svg width="70" height="40" viewBox="0 0 70 40" fill="none">
+          <path 
+            d="M5 35 L20 35 L20 20 L35 20 L35 5 L50 5" 
+            stroke="rgba(200, 200, 200, 0.7)" 
+            strokeWidth="3" 
+            fill="none"
+          />
+        </svg>
+      </div>
+      
+      <div className="absolute bottom-16 left-32 animate-pulse-slow opacity-55">
+        <svg width="60" height="35" viewBox="0 0 60 35" fill="none">
+          <path 
+            d="M5 5 L15 5 L15 15 L25 15 L25 25 L35 25 L35 35 L45 35" 
+            stroke="#A259FF" 
+            strokeWidth="2.5" 
+            fill="none"
+          />
+        </svg>
+      </div>
+      
+      <div className="absolute top-16 right-1/3 animate-pulse-slow opacity-45">
+        <svg width="65" height="30" viewBox="0 0 65 30" fill="none">
+          <path 
+            d="M10 25 L20 25 L20 15 L30 15 L30 5 L40 5 L40 15 L50 15" 
+            stroke="rgba(200, 200, 200, 0.6)" 
+            strokeWidth="2.5" 
+            fill="none"
+          />
+        </svg>
+      </div>
+      
+      <div className="absolute bottom-40 left-16 animate-pulse-slow opacity-50">
+        <svg width="55" height="25" viewBox="0 0 55 25" fill="none">
+          <path 
+            d="M5 20 L12 20 L12 12 L20 12 L20 4 L28 4 L28 12 L36 12" 
             stroke="#A259FF" 
             strokeWidth="2" 
             fill="none"
@@ -48,27 +92,15 @@ export default function HeroSection() {
         </svg>
       </div>
       
-      <div className="absolute top-1/3 left-1/2 opacity-20">
-        <svg width="50" height="30" viewBox="0 0 50 30" fill="none">
-          <path 
-            d="M5 25 L15 25 L15 15 L25 15 L25 5 L35 5" 
-            stroke="rgba(200, 200, 200, 0.5)" 
-            strokeWidth="2" 
-            fill="none"
-          />
-        </svg>
-      </div>
-      
-      <div className="absolute bottom-16 left-32 opacity-30">
-        <svg width="40" height="25" viewBox="0 0 40 25" fill="none">
-          <path 
-            d="M5 5 L10 5 L10 10 L15 10 L15 15 L20 15 L20 20 L25 20" 
-            stroke="#A259FF" 
-            strokeWidth="1.5" 
-            fill="none"
-          />
-        </svg>
-      </div>
+      {/* Circle decorative elements with pulsing */}
+      <div className="absolute top-32 right-32 w-4 h-4 rounded-full animate-pulse-slow opacity-60" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute bottom-24 right-1/3 w-3 h-3 rounded-full animate-pulse-slow opacity-50" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
+      <div className="absolute top-1/2 left-20 w-5 h-5 rounded-full animate-pulse-slow opacity-45" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute bottom-1/3 right-16 w-6 h-6 rounded-full animate-pulse-slow opacity-40" style={{ backgroundColor: 'rgba(200, 200, 200, 0.7)' }} />
+      <div className="absolute top-1/4 left-1/3 w-3 h-3 rounded-full animate-pulse-slow opacity-55" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute bottom-20 left-1/2 w-4 h-4 rounded-full animate-pulse-slow opacity-50" style={{ backgroundColor: 'rgba(200, 200, 200, 0.6)' }} />
+      <div className="absolute top-3/4 right-24 w-2 h-2 rounded-full animate-pulse-slow opacity-60" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute top-40 left-24 w-5 h-5 rounded-full animate-pulse-slow opacity-35" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-8 h-full flex items-center">
