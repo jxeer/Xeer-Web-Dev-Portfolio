@@ -2,7 +2,15 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-full relative" style={{ backgroundColor: '#FFFFFF' }}>
+    <section 
+      id="about" 
+      className="section-full relative" 
+      style={{ 
+        backgroundColor: '#FFFFFF',
+        minHeight: '100vh',
+        width: '100%'
+      }}
+    >
       {/* Decorative dots */}
       <div className="absolute top-1/4 left-1/4 dot-pattern w-24 h-24 opacity-20" />
       <div className="absolute bottom-1/3 right-1/4 dot-pattern w-32 h-32 opacity-20" />

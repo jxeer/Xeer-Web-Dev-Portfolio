@@ -2,7 +2,15 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="section-full relative" style={{ backgroundColor: '#FFFFFF' }}>
+    <section 
+      id="contact" 
+      className="section-full relative" 
+      style={{ 
+        backgroundColor: '#FFFFFF',
+        minHeight: '100vh',
+        width: '100%'
+      }}
+    >
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
