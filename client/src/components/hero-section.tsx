@@ -92,15 +92,17 @@ export default function HeroSection() {
         </svg>
       </div>
       
-      {/* Circle decorative elements with synchronized pulsing */}
-      <div className="absolute top-32 right-32 w-4 h-4 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
-      <div className="absolute bottom-24 right-1/3 w-3 h-3 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
-      <div className="absolute top-1/2 left-20 w-5 h-5 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
-      <div className="absolute bottom-1/3 right-16 w-6 h-6 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.7)' }} />
+      {/* Circle decorative elements with varied sizes and synchronized pulsing */}
+      <div className="absolute top-32 right-32 w-12 h-12 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute bottom-24 right-1/3 w-2 h-2 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
+      <div className="absolute top-1/2 left-20 w-8 h-8 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute bottom-1/3 right-16 w-16 h-16 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.7)' }} />
       <div className="absolute top-1/4 left-1/3 w-3 h-3 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
-      <div className="absolute bottom-20 left-1/2 w-4 h-4 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.6)' }} />
+      <div className="absolute bottom-20 left-1/2 w-10 h-10 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.6)' }} />
       <div className="absolute top-3/4 right-24 w-2 h-2 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
-      <div className="absolute top-40 left-24 w-5 h-5 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
+      <div className="absolute top-40 left-24 w-6 h-6 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
+      <div className="absolute bottom-12 right-1/2 w-14 h-14 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
+      <div className="absolute top-20 right-20 w-4 h-4 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.9)' }} />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-8 h-full flex items-center">
