@@ -5,7 +5,7 @@ This is a full-stack web application built with React (frontend) and Express.js 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
-Color scheme: Dark grey gradient backgrounds (#1E1E1E to #2A2A2A) with white backgrounds for sections 2&4, using #A259FF for accent colors. Sections 1, 3, 5 (Hero, Projects, Footer) use dark gradient with subtle grey dot pattern overlay.
+Color scheme: Dark grey gradient backgrounds (#1E1E1E to #2A2A2A) with white backgrounds for sections 2&4, using #A259FF for accent colors. Sections 1, 3, 5 (Hero, Projects, Footer) use dark gradient with subtle grey dot pattern overlay. Hero section includes decorative zig-zag line elements in light grey and purple.
 
 # System Architecture
 
