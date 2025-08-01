@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" style={{ background: 'transparent', margin: 0, padding: 0 }}>
       <Navigation />
       <HeroSection />
       <AboutSection />
