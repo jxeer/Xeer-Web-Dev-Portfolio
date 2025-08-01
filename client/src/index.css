@@ -25,11 +25,11 @@
   --radius: 0.5rem;
 
   /* Custom portfolio colors */
-  --dark-grey: hsl(220, 10%, 25%);
-  --light-purple: hsl(280, 60%, 85%);
+  --dark-grey: #1E1E1E;
+  --dark-grey-light: #2A2A2A;
   --accent-purple: #A259FF;
   --dark-section: hsl(220, 10%, 25%);
-  --light-section: hsl(280, 60%, 95%);
+  --light-section: #FFFFFF;
 }
 
 .dark {
@@ -70,13 +70,18 @@
 }
 
 @layer components {
-  .hero-split-bg {
-    background: linear-gradient(to right, var(--dark-grey) 50%, var(--light-purple) 50%);
+  .hero-gradient-bg {
+    background: linear-gradient(to bottom, var(--dark-grey) 0%, var(--dark-grey-light) 100%);
   }
 
   .dot-pattern {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
     background-size: 20px 20px;
+  }
+
+  .dot-pattern-subtle {
+    background-image: radial-gradient(circle, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+    background-size: 25px 25px;
   }
 
   .dot-pattern-dark {

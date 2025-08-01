@@ -19,7 +19,7 @@ export default function Navigation() {
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 p-8 flex justify-between items-center">
         <div className="text-2xl font-bold" style={{ color: 'var(--accent-purple)' }}>
-          julian
+          Julian Xeer
         </div>
         <button
           onClick={toggleMenu}
