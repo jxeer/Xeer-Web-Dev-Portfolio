@@ -98,7 +98,7 @@ export default function HeroSection() {
       <div className="absolute top-1/2 left-20 w-8 h-8 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
 
       <div className="absolute top-1/4 left-1/3 w-3 h-3 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
-      <div className="absolute bottom-20 left-1/2 w-10 h-10 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.6)' }} />
+
       <div className="absolute top-3/4 right-24 w-2 h-2 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
       <div className="absolute top-40 left-24 w-6 h-6 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: 'rgba(200, 200, 200, 0.8)' }} />
       <div className="absolute bottom-12 right-1/2 w-14 h-14 rounded-full animate-pulse-slow opacity-20" style={{ backgroundColor: '#A259FF' }} />
