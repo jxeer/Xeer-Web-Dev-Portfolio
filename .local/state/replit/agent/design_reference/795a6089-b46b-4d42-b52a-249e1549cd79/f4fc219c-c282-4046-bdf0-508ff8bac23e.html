@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Xeer - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-purple': '#4F46E5',
+                        'primary-blue': '#7C3AED', 
+                        'accent-lime': '#84CC16',
+                        'dark-purple': '#1E1B4B',
+                        'light-bg': '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .dot-pattern {
+            background-image: radial-gradient(circle, #84CC16 2px, transparent 2px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .section-transition {
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .menu-overlay {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-overlay.open {
+            transform: translateX(0);
+        }
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay fixed top-0 right-0 w-full h-full bg-dark-purple z-50 flex items-center justify-center">
+        <div class="text-center">
+            <button id="closeMenu" class="absolute top-8 right-8 text-accent-lime text-2xl font-bold">×</button>
+            <nav class="space-y-8">
+                <a href="#home" class="block text-white text-2xl font-medium hover:text-accent-lime transition-colors duration-300">Home</a>
+                <a href="#about" class="block text-white text-2xl font-medium hover:text-accent-lime transition-colors duration-300">About</a>
+                <a href="#projects" class="block text-white text-2xl font-medium hover:text-accent-lime transition-colors duration-300">Projects</a>
+                <a href="#contact" class="block text-white text-2xl font-medium hover:text-accent-lime transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Section 1: Home/Hero -->
+    <section id="home" class="gradient-bg h-screen flex items-center justify-center relative overflow-hidden section-transition">
+        <!-- Header -->
+        <header class="absolute top-0 left-0 right-0 z-10 p-8 flex justify-between items-center">
+            <div class="text-accent-lime text-2xl font-bold">julian</div>
+            <button id="hamburger" class="md:block text-white text-2xl focus:outline-none">
+                <div class="w-6 h-6 flex flex-col justify-center space-y-1">
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                </div>
+            </button>
+        </header>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/4 right-1/4 dot-pattern w-32 h-32"></div>
+        <div class="absolute bottom-1/3 left-1/4 w-16 h-16 border-2 border-accent-lime opacity-50"></div>
+        <div class="absolute top-1/2 right-16 w-8 h-8 bg-accent-lime rounded-full opacity-60"></div>
+
+        <!-- Main Content -->
+        <div class="hero-content flex items-center justify-between max-w-6xl mx-auto px-8 w-full">
+            <div class="flex-1">
+                <h1 class="text-white text-6xl md:text-8xl font-bold leading-tight mb-6">
+                    Full Stack<br>
+                    <span class="text-accent-lime">Developer.</span>
+                </h1>
+                <p class="text-white text-lg md:text-xl mb-8 max-w-md">
+                    I like to craft scalable web applications with 
+                    great user experiences and robust backends.
+                </p>
+                <div class="flex space-x-8 text-sm text-white">
+                    <div>
+                        <div class="font-semibold">Highly skilled at full-stack</div>
+                        <div class="opacity-80">development, modern frameworks & cloud deployment.</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold">Proven experience building</div>
+                        <div class="opacity-80">successful products for clients across several industries.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profile Image with decorative frame -->
+            <div class="relative ml-16 hidden md:block">
+                <!-- Professional developer headshot with modern styling -->
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
+                     alt="Julian Xeer - Full Stack Developer" 
+                     class="w-80 h-80 object-cover rounded-lg shadow-2xl" 
+                     data-mock="true" />
+                <div class="absolute -top-4 -right-4 w-16 h-16 border-2 border-accent-lime"></div>
+                <div class="absolute -bottom-4 -left-4 w-8 h-8 bg-accent-lime"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: About/Skills -->
+    <section id="about" class="bg-light-bg h-screen flex items-center justify-center relative section-transition">
+        <!-- Decorative dots -->
+        <div class="absolute top-1/4 left-1/4 dot-pattern w-24 h-24 opacity-20"></div>
+        <div class="absolute bottom-1/3 right-1/4 dot-pattern w-32 h-32 opacity-20"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-primary-purple text-5xl md:text-6xl font-bold mb-8">Design</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    I'm probably not the typical developer positioned behind an Illustrator 
+                    artboard adjusting pixels, but I design. Immersed in stylesheets, 
+                    tweaking font sizes and contemplating layouts is where you'll find 
+                    me (:-). I'm committed to creating fluid user experiences while 
+                    staying fashionable.
+                </p>
+                <!-- Pagination dots -->
+                <div class="flex space-x-2 mt-8">
+                    <div class="w-2 h-2 bg-primary-purple rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="text-primary-purple text-5xl md:text-6xl font-bold mb-8">Engineering</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    In building full-stack applications, I'm equipped with just the right 
+                    tools, and can absolutely function independently of them to deliver 
+                    fast, resilient solutions optimized for scale — performance and 
+                    scalability are priorities on my radar.
+                </p>
+                <!-- Decorative elements -->
+                <div class="absolute right-8 top-1/2 flex flex-col space-y-2">
+                    <div class="w-2 h-2 bg-primary-purple rounded-full"></div>
+                    <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary-purple rounded-full"></div>
+                    <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Experience/Projects -->
+    <section id="projects" class="bg-dark-purple h-screen flex items-center justify-center relative section-transition">
+        <!-- Decorative geometric elements -->
+        <div class="absolute top-1/4 right-1/4 w-32 h-32 border border-accent-lime opacity-30 rotate-45"></div>
+        <div class="absolute bottom-1/3 left-1/4 w-16 h-16 bg-accent-lime opacity-20 rounded-full"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-accent-lime text-5xl md:text-6xl font-bold mb-8">
+                    Over the years,
+                </h2>
+                <div class="space-y-6 text-white">
+                    <p class="text-lg leading-relaxed">
+                        I've built products for companies and businesses around 
+                        the globe ranging from marketing websites to complex 
+                        solutions and enterprise apps with focus on fast, elegant 
+                        and accessible user experiences.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Currently, I work as a Senior Full Stack Engineer 
+                        crafting thoughtful and inclusive experiences that adhere 
+                        to web standards for over 3 million users across the 
+                        world.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Before now, I was Principal Full Stack Engineer at TechCorp, 
+                        where I worked on a suite of tools and services tailored 
+                        towards automated business compliance for multi-channel 
+                        sellers globally.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Prior to TechCorp, I was Senior full stack engineering 
+                        consultant with ReactLab, building JavaScript 
+                        applications and interfaces for orgs and individuals.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        I once also led the development team at StartupX, an e-
+                        learning startup through building multiple React 
+                        applications into a single robust learning platform.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Floating project logos/elements -->
+            <div class="relative">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <!-- Company/project representations -->
+                    <div class="grid grid-cols-2 gap-8 items-center justify-center">
+                        <div class="text-accent-lime font-bold text-2xl bg-white bg-opacity-10 px-4 py-2 rounded">
+                            SHOPIFY
+                        </div>
+                        <div class="text-white font-bold text-xl bg-accent-lime bg-opacity-20 px-4 py-2 rounded">
+                            TECHCORP
+                        </div>
+                        <div class="text-accent-lime font-bold text-xl bg-white bg-opacity-10 px-4 py-2 rounded">
+                            REACTLAB
+                        </div>
+                        <div class="text-white font-bold text-xl bg-accent-lime bg-opacity-20 px-4 py-2 rounded">
+                            STARTUPX
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating geometric elements -->
+                <div class="absolute top-0 right-0 w-8 h-8 bg-accent-lime opacity-60"></div>
+                <div class="absolute bottom-0 left-0 w-6 h-6 border border-white opacity-40"></div>
+                <div class="absolute top-1/2 left-1/2 w-4 h-4 bg-white opacity-30 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact/Work -->
+    <section id="contact" class="bg-light-bg h-screen flex items-center justify-center relative section-transition">
+        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-white p-12 rounded-lg shadow-lg border-l-4 border-primary-purple">
+                <h2 class="text-primary-purple text-4xl md:text-5xl font-bold mb-6">
+                    I build &<br>
+                    design stuff
+                </h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    Open source<br>
+                    projects, web apps<br>
+                    and experimentals.
+                </p>
+                <button class="border-2 border-primary-purple text-primary-purple px-8 py-3 font-medium hover:bg-primary-purple hover:text-white transition-all duration-300">
+                    SEE MY WORK →
+                </button>
+            </div>
+            
+            <div class="bg-white p-12 rounded-lg shadow-lg border-l-4 border-accent-lime">
+                <h2 class="text-primary-purple text-4xl md:text-5xl font-bold mb-6">
+                    I write,<br>
+                    sometimes
+                </h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    About design,<br>
+                    full stack dev,<br>
+                    learning and life.
+                </p>
+                <button class="border-2 border-primary-purple text-primary-purple px-8 py-3 font-medium hover:bg-primary-purple hover:text-white transition-all duration-300">
+                    READ MY ARTICLES →
+                </button>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute right-8 top-1/2 flex flex-col space-y-2">
+            <div class="w-2 h-2 bg-primary-purple rounded-full"></div>
+            <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+            <div class="w-2 h-2 bg-primary-purple rounded-full"></div>
+            <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="bg-dark-purple py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-accent-lime text-sm font-semibold mb-6 tracking-wider">SAY HELLO</h3>
+                    <div class="space-y-4">
+                        <a href="mailto:hello@julianxeer.dev" class="block text-accent-lime text-lg hover:text-white transition-colors duration-300">
+                            hello@julianxeer.dev
+                        </a>
+                        <a href="https://t.me/julianxeer" class="block text-accent-lime text-lg hover:text-white transition-colors duration-300">
+                            t.me/julianxeer
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="space-y-4">
+                        <a href="#projects" class="block text-accent-lime text-lg hover:text-white transition-colors duration-300">
+                            My Work
+                        </a>
+                        <a href="#" class="block text-accent-lime text-lg hover:text-white transition-colors duration-300">
+                            My Shelf
+                        </a>
+                        <a href="#" class="block text-accent-lime text-lg hover:text-white transition-colors duration-300">
+                            My Résumé
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-16 pt-8 flex justify-between items-center">
+                <p class="text-gray-400 text-sm">© Julian Xeer 2025</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-accent-lime hover:text-white transition-colors duration-300">TW</a>
+                    <a href="#" class="text-accent-lime hover:text-white transition-colors duration-300">GH</a>
+                    <a href="#" class="text-accent-lime hover:text-white transition-colors duration-300">LN</a>
+                    <a href="#" class="text-accent-lime hover:text-white transition-colors duration-300">YT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // TODO: Implement smooth scrolling navigation and menu functionality
+        (function() {
+            const hamburger = document.getElementById('hamburger');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeMenu = document.getElementById('closeMenu');
+            const menuLinks = menuOverlay.querySelectorAll('a[href^="#"]');
+
+            // Open menu
+            hamburger.addEventListener('click', () => {
+                menuOverlay.classList.add('open');
+            });
+
+            // Close menu
+            closeMenu.addEventListener('click', () => {
+                menuOverlay.classList.remove('open');
+            });
+
+            // Close menu when clicking navigation links
+            menuLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                    
+                    menuOverlay.classList.remove('open');
+                });
+            });
+
+            // Close menu when clicking outside
+            menuOverlay.addEventListener('click', (e) => {
+                if (e.target === menuOverlay) {
+                    menuOverlay.classList.remove('open');
+                }
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add scroll-based animations
+            const sections = document.querySelectorAll('.section-transition');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+                observer.observe(section);
+            });
+        })();
+    </script>
+</body>
+</html>
