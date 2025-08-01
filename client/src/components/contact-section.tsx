@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="section-full relative" style={{ backgroundColor: 'var(--light-section)' }}>
+    <section id="contact" className="section-full relative" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -10,7 +10,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="bg-white p-12 rounded-lg shadow-lg border-l-4"
-          style={{ borderLeftColor: 'var(--dark-grey)' }}
+          style={{ borderLeftColor: '#A259FF' }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: 'var(--dark-grey)' }}>
             I build &<br />
