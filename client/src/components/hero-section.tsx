@@ -5,9 +5,11 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="section-full relative overflow-hidden dot-pattern-subtle"
+      className="section-full relative overflow-hidden"
       style={{
-        background: 'linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)'
+        background: 'linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)',
+        backgroundImage: 'radial-gradient(circle, rgba(128, 128, 128, 0.15) 1px, transparent 1px)',
+        backgroundSize: '25px 25px'
       }}
     >
       {/* Decorative Elements */}

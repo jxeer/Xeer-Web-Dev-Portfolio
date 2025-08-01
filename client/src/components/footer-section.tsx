@@ -9,7 +9,14 @@ export default function FooterSection() {
   ];
 
   return (
-    <section className="py-16" style={{ backgroundColor: 'var(--dark-section)' }}>
+    <section 
+      className="py-16" 
+      style={{
+        background: 'linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)',
+        backgroundImage: 'radial-gradient(circle, rgba(128, 128, 128, 0.15) 1px, transparent 1px)',
+        backgroundSize: '25px 25px'
+      }}
+    >
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-16">
           <motion.div

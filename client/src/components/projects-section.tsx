@@ -9,7 +9,15 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="section-full relative" style={{ backgroundColor: 'var(--dark-section)' }}>
+    <section 
+      id="projects" 
+      className="section-full relative"
+      style={{
+        background: 'linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)',
+        backgroundImage: 'radial-gradient(circle, rgba(128, 128, 128, 0.15) 1px, transparent 1px)',
+        backgroundSize: '25px 25px'
+      }}
+    >
       {/* Decorative geometric elements */}
       <div 
         className="absolute top-1/4 right-1/4 w-32 h-32 border opacity-30 rotate-45"
