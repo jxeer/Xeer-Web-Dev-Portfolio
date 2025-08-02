@@ -1,9 +1,11 @@
+// Projects Section Component - Dark background section showcasing work experience
 import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
+  // Company/project data - You can edit these names and add/remove companies
   const companies = [
-    { name: "SHOPIFY", accent: true },
-    { name: "TECHCORP", accent: false },
+    { name: "SHOPIFY", accent: true },    // accent: true = uses special styling
+    { name: "TECHCORP", accent: false },  // accent: false = uses default styling
     { name: "REACTLAB", accent: true },
     { name: "STARTUPX", accent: false }
   ];
@@ -13,37 +15,46 @@ export default function ProjectsSection() {
       id="projects" 
       className="section-full relative"
       style={{
+        // Same dark gradient background as Hero and Footer sections
         backgroundColor: '#1E1E1E',
         backgroundImage: `
           radial-gradient(circle, rgba(200, 200, 200, 0.25) 1px, transparent 1px),
           linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)
         `,
-        backgroundSize: '30px 30px, 100% 100%',
+        backgroundSize: '30px 30px, 100% 100%', // Dot spacing and gradient coverage
         minHeight: '100vh',
         width: '100%'
       }}
     >
-      {/* Decorative geometric elements */}
+      {/* Decorative geometric elements for visual interest */}
+      {/* Rotated square border - top right */}
       <div 
         className="absolute top-1/4 right-1/4 w-32 h-32 border opacity-30 rotate-45"
         style={{ borderColor: 'var(--accent-purple)' }}
       />
+      {/* Floating purple circle - bottom left, has gentle floating animation */}
       <div 
         className="absolute bottom-1/3 left-1/4 w-16 h-16 opacity-20 rounded-full animate-float"
         style={{ backgroundColor: 'var(--accent-purple)' }}
       />
       
+      {/* Main content container - Two column layout */}
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+        {/* Left Column - Work Experience Text */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -50 }}  // Slides in from left
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          {/* Section heading in purple accent color */}
           <h2 className="text-5xl md:text-6xl font-bold mb-8" style={{ color: 'var(--accent-purple)' }}>
             Over the years,
           </h2>
+          
+          {/* Work experience descriptions - You can edit these to match your actual experience */}
           <div className="space-y-6 text-white">
+            {/* General overview */}
             <p className="text-lg leading-relaxed">
               I've built products for companies and businesses around 
               the globe ranging from marketing websites to complex 
@@ -51,6 +62,7 @@ export default function ProjectsSection() {
               and accessible user experiences.
             </p>
             
+            {/* Current role - Edit this to reflect your actual current position */}
             <p className="text-lg leading-relaxed">
               Currently, I work as a Senior Full Stack Engineer 
               crafting thoughtful and inclusive experiences that adhere 
@@ -58,6 +70,7 @@ export default function ProjectsSection() {
               world.
             </p>
             
+            {/* Previous role at TechCorp - Replace with your actual experience */}
             <p className="text-lg leading-relaxed">
               Before now, I was Principal Full Stack Engineer at TechCorp, 
               where I worked on a suite of tools and services tailored 
@@ -65,12 +78,14 @@ export default function ProjectsSection() {
               sellers globally.
             </p>
             
+            {/* ReactLab consultant role - Replace with your actual experience */}
             <p className="text-lg leading-relaxed">
               Prior to TechCorp, I was Senior full stack engineering 
               consultant with ReactLab, building JavaScript 
               applications and interfaces for orgs and individuals.
             </p>
             
+            {/* StartupX leadership role - Replace with your actual experience */}
             <p className="text-lg leading-relaxed">
               I once also led the development team at StartupX, an e-
               learning startup through building multiple React 

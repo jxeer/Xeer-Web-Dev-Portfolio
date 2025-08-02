@@ -1,26 +1,33 @@
+// Navigation Component - Fixed header with hamburger menu and slide-out navigation
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navigation() {
+  // State for controlling mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Toggle hamburger menu open/closed
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Handle navigation clicks - smooth scroll to sections and close menu
   const handleNavClick = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // Close menu after navigation
   };
 
   return (
     <>
-      {/* Fixed Header */}
+      {/* Fixed Header - Always visible at top of page */}
       <header className="fixed top-0 left-0 right-0 z-40 p-8 flex justify-between items-center">
+        {/* Logo/Name - Edit this to your name */}
         <div className="text-2xl font-bold" style={{ color: 'var(--accent-purple)' }}>
           Julian Xeer
         </div>
+        
+        {/* Hamburger Menu Button - Animated lines */}
         <button
           onClick={toggleMenu}
           className="text-white text-2xl focus:outline-none z-50 relative"

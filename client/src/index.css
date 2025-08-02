@@ -24,12 +24,12 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* Custom portfolio colors */
-  --dark-grey: #1E1E1E;
-  --dark-grey-light: #2A2A2A;
-  --accent-purple: #A259FF;
+  /* Custom portfolio colors - Edit these to change your website's color scheme */
+  --dark-grey: #1E1E1E;        /* Dark gradient start color */
+  --dark-grey-light: #2A2A2A;  /* Dark gradient end color */
+  --accent-purple: #A259FF;    /* Main accent color for highlights and buttons */
   --dark-section: hsl(220, 10%, 25%);
-  --light-section: #FFFFFF;
+  --light-section: #FFFFFF;    /* White background for sections 2 & 4 */
 }
 
 .dark {
@@ -125,17 +125,19 @@
     }
   }
 
+  /* Custom animations for decorative elements */
+  
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%, 100% { transform: translateY(0px); }    /* Start and end position */
+    50% { transform: translateY(-10px); }       /* Middle position - floats up 10px */
   }
 
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;   /* Gentle floating animation over 6 seconds */
   }
 
   .animate-pulse-slow {
-    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;  /* Synchronized pulsing for all decorative elements */
   }
 
   .animate-float {

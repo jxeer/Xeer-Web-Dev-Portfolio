@@ -1,23 +1,26 @@
+// Footer Section Component - Final dark background section with social links
 import { motion } from "framer-motion";
 
 export default function FooterSection() {
+  // Social media links - Edit these to point to your actual profiles
   const socialLinks = [
-    { label: "TW", href: "#" },
-    { label: "GH", href: "#" },
-    { label: "LN", href: "#" },
-    { label: "YT", href: "#" }
+    { label: "TW", href: "#" },  // Twitter
+    { label: "GH", href: "#" },  // GitHub
+    { label: "LN", href: "#" },  // LinkedIn
+    { label: "YT", href: "#" }   // YouTube
   ];
 
   return (
     <section 
       className="py-16" 
       style={{
+        // Dark gradient background with dot pattern (same as Hero and Projects sections)
         backgroundColor: '#1E1E1E',
         backgroundImage: `
           radial-gradient(circle, rgba(200, 200, 200, 0.25) 1px, transparent 1px),
           linear-gradient(to bottom, #1E1E1E 0%, #2A2A2A 100%)
         `,
-        backgroundSize: '30px 30px, 100% 100%',
+        backgroundSize: '30px 30px, 100% 100%', // Dot spacing and gradient coverage
         minHeight: '60vh',
         width: '100%'
       }}

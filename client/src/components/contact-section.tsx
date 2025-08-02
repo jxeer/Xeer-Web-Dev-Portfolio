@@ -1,3 +1,4 @@
+// Contact Section Component - White background section with contact form
 import { motion } from "framer-motion";
 
 export default function ContactSection() {
@@ -6,19 +7,21 @@ export default function ContactSection() {
       id="contact" 
       className="section-full relative" 
       style={{ 
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF', // White background (section 4 of 5)
         minHeight: '100vh',
         width: '100%'
       }}
     >
+      {/* Main content container - Two column layout */}
       <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+        {/* Left Column - Main Contact Card */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 50 }}  // Slides up from below
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="bg-white p-12 rounded-lg shadow-lg border-l-4"
-          style={{ borderLeftColor: '#A259FF' }}
+          style={{ borderLeftColor: '#A259FF' }}  // Purple left border accent
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: 'var(--dark-grey)' }}>
             I build &<br />
